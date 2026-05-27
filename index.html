@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Govind Tamewar — Policy & Geopolitics Writer</title>
+<meta name="description" content="Govind Tamewar writes long-form policy explainers, geopolitical analysis, and SEO-aware editorial content on India, international relations, and strategic affairs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1612;
+    --ink-mid: #3d3730;
+    --ink-soft: #6b6259;
+    --ink-faint: #a09590;
+    --paper: #faf8f5;
+    --paper-warm: #f5f1eb;
+    --paper-rule: #e8e2d9;
+    --accent: #b84c2e;
+    --accent-hover: #9c3d22;
+    --accent-light: #f5ede9;
+    --gold: #c49a3c;
+    --rule: 1px solid var(--paper-rule);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  /* ─── UTILITY ─── */
+  .container { max-width: 1160px; margin: 0 auto; padding: 0 2rem; }
+  .section-rule { border: none; border-top: var(--rule); margin: 0; }
+
+  /* ─── MASTHEAD NAV ─── */
+  nav {
+    background: var(--paper);
+    border-bottom: var(--rule);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+  }
+  .nav-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+  .nav-logo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 2rem; align-items: center; }
+  .nav-links a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 6rem 0 5rem;
+    border-bottom: var(--rule);
+  }
+  .hero-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 6rem;
+    align-items: start;
+  }
+  .hero-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+  .hero-label::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--accent);
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--ink-mid);
+  }
+  .hero-deck {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-bottom: 2rem;
+    line-height: 1.55;
+    max-width: 580px;
+    border-left: 2px solid var(--accent);
+    padding-left: 1.2rem;
+  }
+  .hero-body {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    max-width: 560px;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+  .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.8rem 1.5rem;
+    transition: background 0.2s;
+  }
+  .btn-primary:hover { background: var(--accent); }
+  .btn-secondary {
+    display: inline-block;
+    border: 1px solid var(--ink-mid);
+    color: var(--ink-mid);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.8rem 1.5rem;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* Hero sidebar */
+  .hero-aside {
+    border-left: var(--rule);
+    padding-left: 3rem;
+  }
+  .hero-aside-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 1.25rem;
+  }
+  .coverage-list { list-style: none; }
+  .coverage-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--ink-mid);
+    padding: 0.5rem 0;
+    border-bottom: var(--rule);
+  }
+  .coverage-list li:last-child { border-bottom: none; }
+  .coverage-list li::before {
+    content: '—';
+    color: var(--accent);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+  }
+
+  /* ─── SECTION HEADER ─── */
+  .section-header {
+    padding: 3.5rem 0 2.5rem;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 0;
+  }
+  .section-header-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .section-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.6rem;
+  }
+  .section-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: var(--accent);
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 400;
+    color: var(--ink);
+  }
+  .section-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--ink-faint);
+    letter-spacing: 0.08em;
+  }
+
+  /* ─── FILTER BAR ─── */
+  .filter-bar {
+    background: var(--paper-warm);
+    border-bottom: var(--rule);
+    padding: 0;
+  }
+  .filter-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .filter-inner::-webkit-scrollbar { display: none; }
+  .filter-btn {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.85rem 1.25rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    margin-bottom: -1px;
+  }
+  .filter-btn:hover { color: var(--ink); }
+  .filter-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ─── ARTICLE GRID ─── */
+  .articles-section { padding: 0 0 5rem; }
+  .articles-grid {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 3rem 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-left: var(--rule);
+  }
+  .article-card {
+    border-right: var(--rule);
+    border-bottom: var(--rule);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.25s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .article-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.35s ease;
+  }
+  .article-card:hover { background: var(--paper-warm); }
+  .article-card:hover::after { width: 100%; }
+  .article-card:hover .card-headline { color: var(--accent-hover); }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .card-category {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0.2rem 0.55rem;
+    display: inline-block;
+  }
+  .card-source {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+  .card-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--ink);
+    margin-bottom: 0.85rem;
+    transition: color 0.2s;
+  }
+  .card-excerpt {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    flex: 1;
+    margin-bottom: 1.25rem;
+  }
+  .card-link {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mid);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.2s;
+  }
+  .card-link svg {
+    width: 10px;
+    height: 10px;
+    transition: transform 0.2s;
+  }
+  .article-card:hover .card-link { color: var(--accent); }
+  .article-card:hover .card-link svg { transform: translate(2px, -2px); }
+
+  /* Featured first card (full-width) */
+  .card-featured {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 2.5rem 2rem;
+    border-bottom: var(--rule);
+  }
+  .card-featured .card-headline {
+    font-size: 1.55rem;
+    line-height: 1.25;
+  }
+  .card-featured .card-excerpt { font-size: 0.95rem; }
+  .card-featured-left { border-right: var(--rule); padding-right: 3rem; }
+  .card-featured-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .card-featured-label::before {
+    content: '★';
+    font-size: 0.6rem;
+  }
+
+  /* ─── HIDDEN cards (filtered) ─── */
+  .article-card.hidden { display: none; }
+
+  /* ─── WRITING PHILOSOPHY ─── */
+  .philosophy-section {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 6rem 0;
+  }
+  .philosophy-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+  .philosophy-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+  .philosophy-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.85rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--paper);
+    margin-bottom: 0;
+  }
+  .philosophy-title em { font-style: italic; color: #c8bfb5; }
+  .philosophy-principles { list-style: none; }
+  .philosophy-principles li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+  .philosophy-principles li:first-child { padding-top: 0; }
+  .principle-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    padding-top: 0.15rem;
+  }
+  .principle-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--paper);
+    margin-bottom: 0.3rem;
+  }
+  .principle-body {
+    font-size: 0.88rem;
+    color: #9e948c;
+    line-height: 1.7;
+  }
+
+  /* ─── PUBLICATION PLATFORMS ─── */
+  .platforms-section { padding: 5rem 0; border-bottom: var(--rule); }
+  .platforms-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .platforms-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: var(--rule);
+    margin-top: 3rem;
+  }
+  .platform-card {
+    padding: 2.5rem;
+    border-right: var(--rule);
+    transition: background 0.2s;
+  }
+  .platform-card:last-child { border-right: none; }
+  .platform-card:hover { background: var(--paper-warm); }
+  .platform-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.75rem;
+  }
+  .platform-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--ink);
+  }
+  .platform-desc {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+  .platform-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .platform-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border: var(--rule);
+    padding: 0.2rem 0.55rem;
+  }
+  .platform-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 1.25rem;
+    transition: gap 0.2s;
+  }
+  .platform-link:hover { gap: 0.7rem; }
+
+  /* ─── CAPABILITIES ─── */
+  .capabilities-section { padding: 5rem 0; border-bottom: var(--rule); background: var(--paper-warm); }
+  .capabilities-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: var(--rule);
+    margin-top: 3rem;
+  }
+  .capability-group {
+    padding: 2rem;
+    border-right: var(--rule);
+  }
+  .capability-group:last-child { border-right: none; }
+  .capability-group-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: var(--rule);
+  }
+  .capability-list { list-style: none; }
+  .capability-list li {
+    font-size: 0.88rem;
+    color: var(--ink-mid);
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    border-bottom: var(--rule);
+  }
+  .capability-list li:last-child { border-bottom: none; }
+  .capability-list li::before {
+    content: '·';
+    color: var(--accent);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  /* ─── CONTACT ─── */
+  .contact-section {
+    padding: 5rem 0;
+    border-bottom: var(--rule);
+  }
+  .contact-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+  }
+  .contact-left h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .contact-left p {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    line-height: 1.75;
+    max-width: 420px;
+  }
+  .contact-links { list-style: none; }
+  .contact-links li {
+    border-bottom: var(--rule);
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-links li:first-child { border-top: var(--rule); }
+  .contact-link-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .contact-link-value {
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.9rem;
+    color: var(--ink);
+    transition: color 0.2s;
+  }
+  .contact-links li:hover .contact-link-value { color: var(--accent); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--ink);
+    color: #6b6259;
+    padding: 2rem 0;
+  }
+  .footer-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .logo {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #a09590;
+  }
+  footer .logo span { color: var(--accent); }
+  footer p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.06em;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 1024px) {
+    .articles-grid { grid-template-columns: repeat(2, 1fr); }
+    .card-featured { grid-template-columns: 1fr; gap: 0; }
+    .card-featured-left { border-right: none; border-bottom: var(--rule); padding-right: 0; padding-bottom: 2rem; }
+    .capabilities-grid { grid-template-columns: repeat(2, 1fr); }
+    .capability-group:nth-child(2) { border-right: none; }
+    .capability-group:nth-child(3) { border-top: var(--rule); }
+    .capability-group:nth-child(4) { border-top: var(--rule); border-right: none; }
+  }
+
+  @media (max-width: 768px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .hero-aside { border-left: none; border-top: var(--rule); padding-left: 0; padding-top: 2rem; }
+    .philosophy-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .articles-grid { grid-template-columns: 1fr; }
+    .card-featured { grid-column: auto; grid-template-columns: 1fr; }
+    .platforms-grid { grid-template-columns: 1fr; }
+    .platform-card { border-right: none; border-bottom: var(--rule); }
+    .platform-card:last-child { border-bottom: none; }
+    .capabilities-grid { grid-template-columns: 1fr; }
+    .capability-group { border-right: none; border-bottom: var(--rule); }
+    .capability-group:last-child { border-bottom: none; }
+    .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .footer-inner { flex-direction: column; gap: 0.75rem; text-align: center; }
+    .nav-links { gap: 1.25rem; }
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero-buttons { flex-direction: column; }
+    .btn-primary, .btn-secondary { text-align: center; }
+  }
+
+  /* ─── FADE-IN ANIMATION ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .hero-inner { animation: fadeUp 0.7s ease both; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Govind <span>Tamewar</span></div>
+    <div class="nav-links">
+      <a href="#writing">Writing</a>
+      <a href="#approach">Approach</a>
+      <a href="#platforms">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-main">
+      <div class="hero-label">Editorial Writer &amp; Policy Analyst</div>
+      <h1>Policy, geopolitics, and <em>economic explainers</em> for the digital age.</h1>
+      <p class="hero-deck">"Complex issues, clearly told — with rigour, context, and editorial precision."</p>
+      <p class="hero-body">
+        I write long-form analytical explainers on Indian policy, international relations, strategic affairs, and economic statecraft. My work combines original research with SEO-aware editorial publishing — designed to inform serious readers and rank well in search. I am the Founder &amp; Editor-in-Chief of civiclens.in, an independent civic journalism platform covering policy, Parliament, and governance.
+      </p>
+      <div class="hero-buttons">
+        <a href="#writing" class="btn-primary">Read Writing Samples</a>
+        <a href="https://civiclens.in" target="_blank" rel="noopener" class="btn-secondary">Visit civiclens.in ↗</a>
+      </div>
+    </div>
+    <aside class="hero-aside">
+      <div class="hero-aside-label">Coverage Areas</div>
+      <ul class="coverage-list">
+        <li>Indian Policy &amp; Governance</li>
+        <li>Geopolitics &amp; Strategic Affairs</li>
+        <li>Fiscal Federalism &amp; Economy</li>
+        <li>International Relations</li>
+        <li>Energy &amp; Resource Politics</li>
+        <li>Technology &amp; Industrial Policy</li>
+        <li>SEO Content Strategy</li>
+        <li>Digital Editorial Publishing</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- WRITING SECTION -->
+<section id="writing">
+  <div class="section-header">
+    <div class="section-header-inner">
+      <div>
+        <div class="section-eyebrow">Featured Work</div>
+        <h2 class="section-title">Writing Samples</h2>
+      </div>
+      <span class="section-count">10 pieces · 2024–2025</span>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Geopolitics">Geopolitics</button>
+      <button class="filter-btn" data-filter="Indian Economy">Indian Economy</button>
+      <button class="filter-btn" data-filter="Strategic Affairs">Strategic Affairs</button>
+      <button class="filter-btn" data-filter="Energy Politics">Energy Politics</button>
+      <button class="filter-btn" data-filter="Technology">Technology</button>
+      <button class="filter-btn" data-filter="Financial Stability">Financial Stability</button>
+    </div>
+  </div>
+
+  <div class="articles-section">
+    <div class="articles-grid" id="articles-grid">
+
+      <!-- FEATURED CARD -->
+      <a href="https://civiclens.in/indian-strategic-autonomy/" target="_blank" rel="noopener"
+         class="article-card card-featured" data-category="Strategic Affairs">
+        <div class="card-featured-left">
+          <div class="card-featured-label">Editor's Pick</div>
+          <div class="card-meta">
+            <span class="card-category">Strategic Affairs</span>
+            <span class="card-source">civiclens.in</span>
+          </div>
+          <h3 class="card-headline">India's strategic autonomy: how New Delhi navigates a world of competing great powers</h3>
+          <p class="card-excerpt">
+            As the US-China rivalry reshapes the global order, India has refined a doctrine that defies easy alignment. This explainer traces the historical roots and contemporary logic of strategic autonomy — from Non-Alignment to multi-alignment — and why it remains the organising principle of Indian foreign policy.
+          </p>
+          <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+        </div>
+        <div class="card-featured-right">
+          <div style="height:100%; display:flex; flex-direction:column; justify-content:center; gap: 1.5rem;">
+            <div style="border-left: 2px solid var(--accent); padding-left: 1.25rem;">
+              <p style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.6; color: var(--ink-mid);">
+                "The persistence of strategic autonomy as a foreign policy doctrine reflects not indecision but a calibrated reading of Indian national interest — one shaped by geography, history, and the hard lessons of the Cold War."
+              </p>
+              <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin-top: 1rem;">Editorial analysis · civiclens.in</p>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; gap: 0.4rem;">
+              <span class="platform-tag">Geopolitics</span>
+              <span class="platform-tag">India Foreign Policy</span>
+              <span class="platform-tag">Strategic Doctrine</span>
+              <span class="platform-tag">Multi-alignment</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- CARD 1 -->
+      <a href="https://civiclens.in/india-fiscal-federalism-41-percent-tax-share/" target="_blank" rel="noopener"
+         class="article-card" data-category="Indian Economy">
+        <div class="card-meta">
+          <span class="card-category">Indian Economy</span>
+          <span class="card-source">civiclens.in</span>
+        </div>
+        <h3 class="card-headline">Why India's states are fighting over 41 percent: the politics of tax devolution</h3>
+        <p class="card-excerpt">An examination of India's fiscal federalism framework and the growing tensions over the vertical devolution formula — analysing how the 41% share for states is contested, calculated, and politically charged ahead of the 16th Finance Commission.</p>
+        <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+      <!-- CARD 2 -->
+      <a href="https://civiclens.in/us-iran-war-india-risks/" target="_blank" rel="noopener"
+         class="article-card" data-category="Geopolitics">
+        <div class="card-meta">
+          <span class="card-category">Geopolitics</span>
+          <span class="card-source">civiclens.in</span>
+        </div>
+        <h3 class="card-headline">What a US-Iran war would mean for India: energy, diaspora, and the Gulf equation</h3>
+        <p class="card-excerpt">India maintains deep economic and strategic interests in the Persian Gulf — from energy imports to the 9 million-strong diaspora. This piece maps the precise risks for New Delhi if American-Iranian tensions escalate into open conflict.</p>
+        <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+      <!-- CARD 3 -->
+      <a href="https://civiclens.in/india-semiconductor-industry-explained/" target="_blank" rel="noopener"
+         class="article-card" data-category="Technology">
+        <div class="card-meta">
+          <span class="card-category">Technology</span>
+          <span class="card-source">civiclens.in</span>
+        </div>
+        <h3 class="card-headline">India's semiconductor ambition, explained: why chips are the new frontier of industrial policy</h3>
+        <p class="card-excerpt">India's ₹76,000-crore semiconductor push is the most significant industrial policy bet since liberalisation. This explainer breaks down the supply chain economics, the geopolitical drivers, and the real barriers standing between ambition and execution.</p>
+        <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+      <!-- CARD 4 -->
+      <a href="https://civiclens.in/china-rare-earth-exports-trump-tariffs-geopolitics/" target="_blank" rel="noopener"
+         class="article-card" data-category="Geopolitics">
+        <div class="card-meta">
+          <span class="card-category">Geopolitics</span>
+          <span class="card-source">civiclens.in</span>
+        </div>
+        <h3 class="card-headline">China's rare earth gambit: how Beijing uses critical minerals as geopolitical leverage</h3>
+        <p class="card-excerpt">As Trump-era tariffs reignited the US-China trade war, Beijing's decision to restrict rare earth exports exposed the world's dangerous dependence on Chinese supply chains. A reported analysis of resource nationalism as strategic statecraft.</p>
+        <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+      <!-- CARD 5 -->
+      <a href="https://civiclens.in/vijay-government-formation/" target="_blank" rel="noopener"
+         class="article-card" data-category="Indian Economy">
+        <div class="card-meta">
+          <span class="card-category">Policy Analysis</span>
+          <span class="card-source">civiclens.in</span>
+        </div>
+        <h3 class="card-headline">How Vijay's Tamilaga Vettri Kazhagam is reshaping Tamil Nadu's political calculus</h3>
+        <p class="card-excerpt">Actor-turned-politician Vijay's entry into Tamil Nadu politics marks a significant shift in the state's electoral landscape. This piece traces the structural conditions that enabled his rise and what it signals for the 2026 assembly race.</p>
+        <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+      <!-- CARD 6 -->
+      <a href="https://civiclens.in/uae-exit-from-opec/" target="_blank" rel="noopener"
+         class="article-card" data-category="Energy Politics">
+        <div class="card-meta">
+          <span class="card-category">Energy Politics</span>
+          <span class="card-source">civiclens.in</span>
+        </div>
+        <h3 class="card-headline">Why the UAE's OPEC calculus is changing — and what it means for global oil markets</h3>
+        <p class="card-excerpt">Abu Dhabi has long been a stabilising force within OPEC, but growing production ambitions and a divergence from Saudi Arabia's strategy have placed the UAE at a fork in the road. An analysis of the economics and politics behind Gulf energy diplomacy.</p>
+        <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+      <!-- CARD 7 -->
+      <a href="https://civiclens.in/rupee-depreciation-india/" target="_blank" rel="noopener"
+         class="article-card" data-category="Indian Economy">
+        <div class="card-meta">
+          <span class="card-category">Indian Economy</span>
+          <span class="card-source">civiclens.in</span>
+        </div>
+        <h3 class="card-headline">The falling rupee: what drives India's currency depreciation and who bears the cost</h3>
+        <p class="card-excerpt">India's currency has faced sustained depreciation pressure driven by a combination of global dollar strength, persistent current account deficits, and portfolio outflows. This explainer maps the mechanics, consequences, and policy responses — told through numbers that matter.</p>
+        <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+      <!-- CARD 8 -->
+      <a href="https://civiclens.in/india-financial-stability-2026/" target="_blank" rel="noopener"
+         class="article-card" data-category="Financial Stability">
+        <div class="card-meta">
+          <span class="card-category">Financial Stability</span>
+          <span class="card-source">civiclens.in</span>
+        </div>
+        <h3 class="card-headline">India's financial stability in 2026: reading the stress signals in a resilient system</h3>
+        <p class="card-excerpt">India's banking sector has strengthened on paper — with improved NPA ratios and capital buffers — but a closer look reveals emerging pressure points in credit growth, NBFC exposure, and global spillover risks that bear watching.</p>
+        <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+      <!-- CARD 9: MEDIUM -->
+      <a href="https://medium.com/@govindtamewar/indias-new-deterrence-doctrine-why-terrorism-is-no-longer-just-terrorism-f52b929634ec" target="_blank" rel="noopener"
+         class="article-card" data-category="Strategic Affairs">
+        <div class="card-meta">
+          <span class="card-category">Strategic Affairs</span>
+          <span class="card-source">Medium</span>
+        </div>
+        <h3 class="card-headline">India's new deterrence doctrine: why terrorism is no longer just terrorism</h3>
+        <p class="card-excerpt">In the aftermath of escalating cross-border provocations, India has signalled a fundamental shift in its deterrence calculus — one that blurs the line between state and non-state actors. An analytical essay on the strategic doctrine redefining South Asian security.</p>
+        <span class="card-link">Read on Medium <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- WRITING PHILOSOPHY -->
+<section id="approach" class="philosophy-section">
+  <div class="philosophy-inner">
+    <div>
+      <div class="philosophy-label">Editorial Approach</div>
+      <h2 class="philosophy-title">A craft built on <em>rigour, context,</em> and clarity</h2>
+    </div>
+    <ul class="philosophy-principles">
+      <li>
+        <span class="principle-num">01</span>
+        <div>
+          <div class="principle-title">Research before narrative</div>
+          <p class="principle-body">Every piece begins with a clear empirical question. Policy claims must be grounded in primary data — parliamentary records, RBI reports, MOSPI figures, UN documents. The narrative follows the evidence, not the other way around.</p>
+        </div>
+      </li>
+      <li>
+        <span class="principle-num">02</span>
+        <div>
+          <div class="principle-title">Context over chronology</div>
+          <p class="principle-body">Good analytical journalism does not simply report what happened — it explains why it matters and how it connects to longer structural trends. A budget line item is meaningless without the fiscal history behind it.</p>
+        </div>
+      </li>
+      <li>
+        <span class="principle-num">03</span>
+        <div>
+          <div class="principle-title">SEO as editorial discipline</div>
+          <p class="principle-body">Search-engine awareness is not separate from editorial quality — it is an expression of it. Writing for genuine search intent means writing what readers actually need, structured clearly enough that both humans and algorithms can follow the argument.</p>
+        </div>
+      </li>
+      <li>
+        <span class="principle-num">04</span>
+        <div>
+          <div class="principle-title">Complexity without jargon</div>
+          <p class="principle-body">Fiscal federalism, deterrence theory, semiconductor economics — these are not simple topics. The writer's job is to find the plain-language frame that preserves intellectual honesty without sacrificing accessibility.</p>
+        </div>
+      </li>
+      <li>
+        <span class="principle-num">05</span>
+        <div>
+          <div class="principle-title">Publication-grade standards</div>
+          <p class="principle-body">Every article is treated as a publishable unit: a strong news lead, edited for Yoast readability, with proper metadata, structured data, and canonical tagging. Editorial craft and technical SEO are the same discipline practised at different levels.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PUBLICATION PLATFORMS -->
+<section id="platforms" class="platforms-section">
+  <div class="platforms-inner">
+    <div class="section-eyebrow">Publication Platforms</div>
+    <h2 class="section-title" style="margin-top: 0.5rem;">Where the work appears</h2>
+    <div class="platforms-grid">
+      <div class="platform-card">
+        <div class="platform-name">Primary Platform</div>
+        <h3 class="platform-title">civiclens.in</h3>
+        <p class="platform-desc">
+          An independent civic journalism platform I founded in 2025, focused on policy depth, parliamentary accountability, and geopolitical analysis. All content follows SEO-first editorial workflows — from keyword research and structured metadata to Yoast-optimised long-form explainers. The platform targets the gap between wire-service brevity and academic inaccessibility, writing for serious digital readers.
+        </p>
+        <div class="platform-tags">
+          <span class="platform-tag">Civic Journalism</span>
+          <span class="platform-tag">Policy Analysis</span>
+          <span class="platform-tag">Long-Form Explainers</span>
+          <span class="platform-tag">SEO Publishing</span>
+          <span class="platform-tag">Parliamentary Coverage</span>
+          <span class="platform-tag">WordPress</span>
+        </div>
+        <a href="https://civiclens.in" target="_blank" rel="noopener" class="platform-link">
+          Visit platform → civiclens.in
+        </a>
+      </div>
+      <div class="platform-card">
+        <div class="platform-name">Essay &amp; Analysis</div>
+        <h3 class="platform-title">Medium</h3>
+        <p class="platform-desc">
+          Used for analytical essays and opinion pieces that take a more personal argumentative voice — particularly on strategic affairs, Indian foreign policy, and security doctrine. Medium complements civiclens.in by hosting work that benefits from editorial freedom outside an institutional format, including deeper structural arguments on geopolitical themes.
+        </p>
+        <div class="platform-tags">
+          <span class="platform-tag">Strategic Analysis</span>
+          <span class="platform-tag">Security Doctrine</span>
+          <span class="platform-tag">Geopolitical Essays</span>
+          <span class="platform-tag">Foreign Policy</span>
+          <span class="platform-tag">Digital Publishing</span>
+        </div>
+        <a href="https://medium.com/@govindtamewar" target="_blank" rel="noopener" class="platform-link">
+          Visit Medium profile →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section class="capabilities-section">
+  <div class="capabilities-inner">
+    <div class="section-eyebrow">Editorial Capabilities</div>
+    <h2 class="section-title" style="margin-top: 0.5rem;">What I bring to the desk</h2>
+    <div class="capabilities-grid">
+      <div class="capability-group">
+        <div class="capability-group-title">Writing &amp; Analysis</div>
+        <ul class="capability-list">
+          <li>Long-form policy explainers</li>
+          <li>Geopolitical analysis</li>
+          <li>Analytical storytelling</li>
+          <li>News-lead writing</li>
+          <li>Editorial structuring</li>
+          <li>Research-driven journalism</li>
+        </ul>
+      </div>
+      <div class="capability-group">
+        <div class="capability-group-title">SEO &amp; Content Strategy</div>
+        <ul class="capability-list">
+          <li>Keyword research &amp; mapping</li>
+          <li>Search intent writing</li>
+          <li>On-page optimisation</li>
+          <li>Metadata &amp; schema</li>
+          <li>Yoast SEO workflows</li>
+          <li>SEMrush content audits</li>
+        </ul>
+      </div>
+      <div class="capability-group">
+        <div class="capability-group-title">Digital Publishing</div>
+        <ul class="capability-list">
+          <li>WordPress publishing</li>
+          <li>Google Search Console</li>
+          <li>Crawl budget management</li>
+          <li>Hreflang &amp; canonicals</li>
+          <li>Structured data markup</li>
+          <li>Editorial CMS workflows</li>
+        </ul>
+      </div>
+      <div class="capability-group">
+        <div class="capability-group-title">Subject Expertise</div>
+        <ul class="capability-list">
+          <li>Indian fiscal policy</li>
+          <li>Geopolitics &amp; IR</li>
+          <li>Strategic &amp; defence affairs</li>
+          <li>Energy economics</li>
+          <li>Financial markets</li>
+          <li>Technology &amp; industrial policy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <h2>Get in touch</h2>
+      <p>
+        I am open to contributing to digital publications, editorial teams, policy research organisations, and content strategy engagements. If you are looking for a writer who combines analytical depth with SEO-aware publishing, I would be glad to hear from you.
+      </p>
+    </div>
+    <div class="contact-right">
+      <ul class="contact-links">
+        <li>
+          <span class="contact-link-label">Email</span>
+          <a href="mailto:govind@civiclens.in" class="contact-link-value">govind@civiclens.in</a>
+        </li>
+        <li>
+          <span class="contact-link-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/govindtamewar" target="_blank" rel="noopener" class="contact-link-value">linkedin.com/in/govindtamewar ↗</a>
+        </li>
+        <li>
+          <span class="contact-link-label">Publication</span>
+          <a href="https://civiclens.in" target="_blank" rel="noopener" class="contact-link-value">civiclens.in ↗</a>
+        </li>
+        <li>
+          <span class="contact-link-label">Medium</span>
+          <a href="https://medium.com/@govindtamewar" target="_blank" rel="noopener" class="contact-link-value">@govindtamewar ↗</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="logo">Govind <span>Tamewar</span> — Editorial Writer</div>
+    <p>Policy · Geopolitics · Digital Publishing · © 2025</p>
+  </div>
+</footer>
+
+<script>
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.article-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+
+      cards.forEach(card => {
+        if (filter === 'all') {
+          card.classList.remove('hidden');
+        } else {
+          const cat = card.dataset.category;
+          card.classList.toggle('hidden', cat !== filter);
+        }
+      });
+    });
+  });
+
+  // Smooth entrance on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.article-card, .platform-card, .capability-group').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(12px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
