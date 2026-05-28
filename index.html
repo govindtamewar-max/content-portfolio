@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Govind Tamewar — Policy & Geopolitics Writer</title>
-<meta name="description" content="Govind Tamewar writes long-form policy explainers, geopolitical analysis, and SEO-aware editorial content on India, international relations, and strategic affairs.">
+<title>Govind Tamewar — Content Strategist & SEO Writer</title>
+<meta name="description" content="Govind Tamewar produces research-backed long-form content, SEO explainers, and authority writing for digital publishers, brands, and growth teams.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,7 +25,6 @@
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; font-size: 16px; }
 
   body {
@@ -37,20 +36,14 @@
   }
 
   a { color: inherit; text-decoration: none; }
-  img { display: block; max-width: 100%; }
 
-  /* ─── UTILITY ─── */
-  .container { max-width: 1160px; margin: 0 auto; padding: 0 2rem; }
-  .section-rule { border: none; border-top: var(--rule); margin: 0; }
-
-  /* ─── MASTHEAD NAV ─── */
+  /* ─── NAV ─── */
   nav {
     background: var(--paper);
     border-bottom: var(--rule);
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 0;
   }
   .nav-inner {
     max-width: 1160px;
@@ -90,7 +83,7 @@
     margin: 0 auto;
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: 1fr 340px;
+    grid-template-columns: 1fr 320px;
     gap: 6rem;
     align-items: start;
   }
@@ -114,7 +107,7 @@
   }
   .hero h1 {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(2.6rem, 5vw, 4rem);
+    font-size: clamp(2.4rem, 5vw, 3.75rem);
     font-weight: 400;
     line-height: 1.12;
     letter-spacing: -0.01em;
@@ -205,7 +198,6 @@
   .section-header {
     padding: 3.5rem 0 2.5rem;
     border-bottom: 2px solid var(--ink);
-    margin-bottom: 0;
   }
   .section-header-inner {
     max-width: 1160px;
@@ -250,7 +242,6 @@
   .filter-bar {
     background: var(--paper-warm);
     border-bottom: var(--rule);
-    padding: 0;
   }
   .filter-inner {
     max-width: 1160px;
@@ -355,6 +346,23 @@
     flex: 1;
     margin-bottom: 1.25rem;
   }
+  /* Content type signal badges */
+  .card-signals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 1rem;
+  }
+  .signal-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.52rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border: var(--rule);
+    padding: 0.15rem 0.45rem;
+    background: var(--paper);
+  }
   .card-link {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.6rem;
@@ -365,6 +373,7 @@
     align-items: center;
     gap: 0.4rem;
     transition: color 0.2s;
+    margin-top: auto;
   }
   .card-link svg {
     width: 10px;
@@ -374,7 +383,7 @@
   .article-card:hover .card-link { color: var(--accent); }
   .article-card:hover .card-link svg { transform: translate(2px, -2px); }
 
-  /* Featured first card (full-width) */
+  /* Featured card */
   .card-featured {
     grid-column: 1 / -1;
     display: grid;
@@ -383,10 +392,7 @@
     padding: 2.5rem 2rem;
     border-bottom: var(--rule);
   }
-  .card-featured .card-headline {
-    font-size: 1.55rem;
-    line-height: 1.25;
-  }
+  .card-featured .card-headline { font-size: 1.55rem; line-height: 1.25; }
   .card-featured .card-excerpt { font-size: 0.95rem; }
   .card-featured-left { border-right: var(--rule); padding-right: 3rem; }
   .card-featured-label {
@@ -400,15 +406,10 @@
     align-items: center;
     gap: 0.5rem;
   }
-  .card-featured-label::before {
-    content: '★';
-    font-size: 0.6rem;
-  }
-
-  /* ─── HIDDEN cards (filtered) ─── */
+  .card-featured-label::before { content: '★'; font-size: 0.6rem; }
   .article-card.hidden { display: none; }
 
-  /* ─── WRITING PHILOSOPHY ─── */
+  /* ─── CONTENT APPROACH (dark band) ─── */
   .philosophy-section {
     background: var(--ink);
     color: var(--paper);
@@ -437,7 +438,6 @@
     font-weight: 400;
     line-height: 1.25;
     color: var(--paper);
-    margin-bottom: 0;
   }
   .philosophy-title em { font-style: italic; color: #c8bfb5; }
   .philosophy-principles { list-style: none; }
@@ -471,11 +471,7 @@
 
   /* ─── PUBLICATION PLATFORMS ─── */
   .platforms-section { padding: 5rem 0; border-bottom: var(--rule); }
-  .platforms-inner {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
+  .platforms-inner { max-width: 1160px; margin: 0 auto; padding: 0 2rem; }
   .platforms-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -537,11 +533,7 @@
 
   /* ─── CAPABILITIES ─── */
   .capabilities-section { padding: 5rem 0; border-bottom: var(--rule); background: var(--paper-warm); }
-  .capabilities-inner {
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
+  .capabilities-inner { max-width: 1160px; margin: 0 auto; padding: 0 2rem; }
   .capabilities-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -584,10 +576,7 @@
   }
 
   /* ─── CONTACT ─── */
-  .contact-section {
-    padding: 5rem 0;
-    border-bottom: var(--rule);
-  }
+  .contact-section { padding: 5rem 0; border-bottom: var(--rule); }
   .contact-inner {
     max-width: 1160px;
     margin: 0 auto;
@@ -626,7 +615,6 @@
     color: var(--ink-faint);
   }
   .contact-link-value {
-    font-family: 'Source Serif 4', serif;
     font-size: 0.9rem;
     color: var(--ink);
     transition: color 0.2s;
@@ -695,7 +683,6 @@
     .btn-primary, .btn-secondary { text-align: center; }
   }
 
-  /* ─── FADE-IN ANIMATION ─── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(18px); }
     to { opacity: 1; transform: translateY(0); }
@@ -712,7 +699,7 @@
     <div class="nav-links">
       <a href="#writing">Writing</a>
       <a href="#approach">Approach</a>
-      <a href="#platforms">Publications</a>
+      <a href="#platforms">Platforms</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -722,28 +709,28 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-main">
-      <div class="hero-label">Editorial Writer &amp; Policy Analyst</div>
-      <h1>Policy, geopolitics, and <em>economic explainers</em> for the digital age.</h1>
-      <p class="hero-deck">"Complex issues, clearly told — with rigour, context, and editorial precision."</p>
+      <div class="hero-label">Content Strategist &amp; SEO Writer</div>
+      <h1>Research-backed content that <em>ranks, engages,</em> and builds authority.</h1>
+      <p class="hero-deck">"Long-form content and SEO strategy designed to drive organic growth — built on research depth, editorial precision, and audience-first thinking."</p>
       <p class="hero-body">
-        I write long-form analytical explainers on Indian policy, international relations, strategic affairs, and economic statecraft. My work combines original research with SEO-aware editorial publishing — designed to inform serious readers and rank well in search. I am the Founder &amp; Editor-in-Chief of civiclens.in, an independent civic journalism platform covering policy, Parliament, and governance.
+        I produce high-quality long-form content, SEO-optimised explainers, and structured authority writing for digital publishers, brands, and growth teams. As the founder of CIVICLENS.IN, I've built and run a full content operation end-to-end — from editorial strategy and keyword architecture to content briefs, writer management, and performance analysis. My writing combines research depth with the structural discipline that modern SEO publishing demands.
       </p>
       <div class="hero-buttons">
-        <a href="#writing" class="btn-primary">Read Writing Samples</a>
-        <a href="https://civiclens.in" target="_blank" rel="noopener" class="btn-secondary">Visit civiclens.in ↗</a>
+        <a href="#writing" class="btn-primary">View Writing Samples</a>
+        <a href="https://civiclens.in" target="_blank" rel="noopener" class="btn-secondary">Visit CIVICLENS.IN ↗</a>
       </div>
     </div>
     <aside class="hero-aside">
-      <div class="hero-aside-label">Coverage Areas</div>
+      <div class="hero-aside-label">Content Capabilities</div>
       <ul class="coverage-list">
-        <li>Indian Policy &amp; Governance</li>
-        <li>Geopolitics &amp; Strategic Affairs</li>
-        <li>Fiscal Federalism &amp; Economy</li>
-        <li>International Relations</li>
-        <li>Energy &amp; Resource Politics</li>
-        <li>Technology &amp; Industrial Policy</li>
-        <li>SEO Content Strategy</li>
-        <li>Digital Editorial Publishing</li>
+        <li>Long-Form SEO Articles</li>
+        <li>Authority &amp; Explainer Content</li>
+        <li>B2B &amp; Thought Leadership</li>
+        <li>Research-Backed Analysis</li>
+        <li>Editorial Strategy</li>
+        <li>Content Operations</li>
+        <li>Keyword &amp; SEO Architecture</li>
+        <li>Structured Digital Publishing</li>
       </ul>
     </aside>
   </div>
@@ -754,22 +741,22 @@
   <div class="section-header">
     <div class="section-header-inner">
       <div>
-        <div class="section-eyebrow">Featured Work</div>
-        <h2 class="section-title">Writing Samples</h2>
+        <div class="section-eyebrow">Writing Portfolio</div>
+        <h2 class="section-title">Content Samples</h2>
       </div>
-      <span class="section-count">10 pieces · 2024–2025</span>
+      <span class="section-count">10 pieces · Research depth · SEO-structured</span>
     </div>
   </div>
 
   <div class="filter-bar">
     <div class="filter-inner">
       <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="Geopolitics">Geopolitics</button>
-      <button class="filter-btn" data-filter="Indian Economy">Indian Economy</button>
-      <button class="filter-btn" data-filter="Strategic Affairs">Strategic Affairs</button>
-      <button class="filter-btn" data-filter="Energy Politics">Energy Politics</button>
-      <button class="filter-btn" data-filter="Technology">Technology</button>
-      <button class="filter-btn" data-filter="Financial Stability">Financial Stability</button>
+      <button class="filter-btn" data-filter="Explainer">Explainer</button>
+      <button class="filter-btn" data-filter="Industry Analysis">Industry Analysis</button>
+      <button class="filter-btn" data-filter="Strategic Analysis">Strategic Analysis</button>
+      <button class="filter-btn" data-filter="Economic Analysis">Economic Analysis</button>
+      <button class="filter-btn" data-filter="Market Analysis">Market Analysis</button>
+      <button class="filter-btn" data-filter="Finance">Finance</button>
     </div>
   </div>
 
@@ -778,32 +765,38 @@
 
       <!-- FEATURED CARD -->
       <a href="https://civiclens.in/indian-strategic-autonomy/" target="_blank" rel="noopener"
-         class="article-card card-featured" data-category="Strategic Affairs">
+         class="article-card card-featured" data-category="Strategic Analysis">
         <div class="card-featured-left">
-          <div class="card-featured-label">Editor's Pick</div>
+          <div class="card-featured-label">Featured Piece</div>
           <div class="card-meta">
-            <span class="card-category">Strategic Affairs</span>
+            <span class="card-category">Strategic Analysis</span>
             <span class="card-source">civiclens.in</span>
           </div>
-          <h3 class="card-headline">India's strategic autonomy: how New Delhi navigates a world of competing great powers</h3>
+          <h3 class="card-headline">India's strategic autonomy: how a major economy navigates competing global partnerships</h3>
           <p class="card-excerpt">
-            As the US-China rivalry reshapes the global order, India has refined a doctrine that defies easy alignment. This explainer traces the historical roots and contemporary logic of strategic autonomy — from Non-Alignment to multi-alignment — and why it remains the organising principle of Indian foreign policy.
+            A structured long-form explainer tracing the historical, economic, and geopolitical logic behind India's multi-alignment doctrine — a piece that demonstrates research depth, contextual analysis, and the ability to make complex strategic frameworks accessible to a broad digital audience. Optimised for search intent around international business and investment context.
           </p>
+          <div class="card-signals">
+            <span class="signal-tag">~2,500 words</span>
+            <span class="signal-tag">SEO-structured</span>
+            <span class="signal-tag">Authority content</span>
+            <span class="signal-tag">Long-form explainer</span>
+          </div>
           <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
         </div>
         <div class="card-featured-right">
           <div style="height:100%; display:flex; flex-direction:column; justify-content:center; gap: 1.5rem;">
             <div style="border-left: 2px solid var(--accent); padding-left: 1.25rem;">
               <p style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.05rem; line-height: 1.6; color: var(--ink-mid);">
-                "The persistence of strategic autonomy as a foreign policy doctrine reflects not indecision but a calibrated reading of Indian national interest — one shaped by geography, history, and the hard lessons of the Cold War."
+                "This piece demonstrates the core of what I do best: taking a complex, multi-layered topic and building it into structured, readable long-form content with a clear narrative spine — the same approach I bring to industry explainers, SaaS content, and B2B thought leadership."
               </p>
-              <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin-top: 1rem;">Editorial analysis · civiclens.in</p>
+              <p style="font-family: 'IBM Plex Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin-top: 1rem;">Content note · Govind Tamewar</p>
             </div>
             <div style="display:flex; flex-wrap:wrap; gap: 0.4rem;">
-              <span class="platform-tag">Geopolitics</span>
-              <span class="platform-tag">India Foreign Policy</span>
-              <span class="platform-tag">Strategic Doctrine</span>
-              <span class="platform-tag">Multi-alignment</span>
+              <span class="platform-tag">Research-backed</span>
+              <span class="platform-tag">Contextual Analysis</span>
+              <span class="platform-tag">Structured Narrative</span>
+              <span class="platform-tag">SEO-Optimised</span>
             </div>
           </div>
         </div>
@@ -811,109 +804,154 @@
 
       <!-- CARD 1 -->
       <a href="https://civiclens.in/india-fiscal-federalism-41-percent-tax-share/" target="_blank" rel="noopener"
-         class="article-card" data-category="Indian Economy">
+         class="article-card" data-category="Explainer">
         <div class="card-meta">
-          <span class="card-category">Indian Economy</span>
+          <span class="card-category">Explainer</span>
           <span class="card-source">civiclens.in</span>
         </div>
-        <h3 class="card-headline">Why India's states are fighting over 41 percent: the politics of tax devolution</h3>
-        <p class="card-excerpt">An examination of India's fiscal federalism framework and the growing tensions over the vertical devolution formula — analysing how the 41% share for states is contested, calculated, and politically charged ahead of the 16th Finance Commission.</p>
+        <h3 class="card-headline">Why India's states are fighting over 41 percent: a plain-language guide to tax devolution</h3>
+        <p class="card-excerpt">A deep-dive explainer on a technically complex policy topic — restructured for digital readers seeking clarity. Demonstrates the ability to take data-heavy, multi-stakeholder subject matter and build it into a readable, well-structured piece with strong search intent alignment.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Data-driven</span>
+          <span class="signal-tag">Explainer format</span>
+          <span class="signal-tag">SEO-structured</span>
+        </div>
         <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
       <!-- CARD 2 -->
       <a href="https://civiclens.in/us-iran-war-india-risks/" target="_blank" rel="noopener"
-         class="article-card" data-category="Geopolitics">
+         class="article-card" data-category="Market Analysis">
         <div class="card-meta">
-          <span class="card-category">Geopolitics</span>
+          <span class="card-category">Market Analysis</span>
           <span class="card-source">civiclens.in</span>
         </div>
-        <h3 class="card-headline">What a US-Iran war would mean for India: energy, diaspora, and the Gulf equation</h3>
-        <p class="card-excerpt">India maintains deep economic and strategic interests in the Persian Gulf — from energy imports to the 9 million-strong diaspora. This piece maps the precise risks for New Delhi if American-Iranian tensions escalate into open conflict.</p>
+        <h3 class="card-headline">Supply chain exposure and energy risk: mapping India's economic stake in the Persian Gulf</h3>
+        <p class="card-excerpt">An audience-first analysis piece examining energy supply chains, diaspora remittance flows, and market exposure — demonstrating the ability to synthesise economic, logistical, and market-risk factors into a structured narrative relevant to B2B and financial audiences.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Risk analysis</span>
+          <span class="signal-tag">Supply chain</span>
+          <span class="signal-tag">Market context</span>
+        </div>
         <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
       <!-- CARD 3 -->
       <a href="https://civiclens.in/india-semiconductor-industry-explained/" target="_blank" rel="noopener"
-         class="article-card" data-category="Technology">
+         class="article-card" data-category="Industry Analysis">
         <div class="card-meta">
-          <span class="card-category">Technology</span>
+          <span class="card-category">Industry Analysis</span>
           <span class="card-source">civiclens.in</span>
         </div>
-        <h3 class="card-headline">India's semiconductor ambition, explained: why chips are the new frontier of industrial policy</h3>
-        <p class="card-excerpt">India's ₹76,000-crore semiconductor push is the most significant industrial policy bet since liberalisation. This explainer breaks down the supply chain economics, the geopolitical drivers, and the real barriers standing between ambition and execution.</p>
+        <h3 class="card-headline">India's semiconductor push, explained: industrial policy, supply chains, and the global chip race</h3>
+        <p class="card-excerpt">A technology industry deep-dive covering supply chain economics, investment incentives, and execution barriers — the kind of structured, research-backed long-form content directly applicable to SaaS, tech, and B2B publishing contexts where authority and search visibility matter.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Tech industry</span>
+          <span class="signal-tag">B2B-relevant</span>
+          <span class="signal-tag">Long-form</span>
+        </div>
         <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
       <!-- CARD 4 -->
       <a href="https://civiclens.in/china-rare-earth-exports-trump-tariffs-geopolitics/" target="_blank" rel="noopener"
-         class="article-card" data-category="Geopolitics">
+         class="article-card" data-category="Industry Analysis">
         <div class="card-meta">
-          <span class="card-category">Geopolitics</span>
+          <span class="card-category">Industry Analysis</span>
           <span class="card-source">civiclens.in</span>
         </div>
-        <h3 class="card-headline">China's rare earth gambit: how Beijing uses critical minerals as geopolitical leverage</h3>
-        <p class="card-excerpt">As Trump-era tariffs reignited the US-China trade war, Beijing's decision to restrict rare earth exports exposed the world's dangerous dependence on Chinese supply chains. A reported analysis of resource nationalism as strategic statecraft.</p>
+        <h3 class="card-headline">Critical minerals and supply chain leverage: how resource dependency shapes global trade strategy</h3>
+        <p class="card-excerpt">A reported analysis of critical mineral supply chains, trade policy, and the economics of resource nationalism — a piece that shows the ability to connect macroeconomic trends to practical business implications, relevant to content teams covering trade, procurement, or global markets.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Trade analysis</span>
+          <span class="signal-tag">Supply chain</span>
+          <span class="signal-tag">Research-driven</span>
+        </div>
         <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
       <!-- CARD 5 -->
       <a href="https://civiclens.in/vijay-government-formation/" target="_blank" rel="noopener"
-         class="article-card" data-category="Indian Economy">
+         class="article-card" data-category="Explainer">
         <div class="card-meta">
-          <span class="card-category">Policy Analysis</span>
+          <span class="card-category">Explainer</span>
           <span class="card-source">civiclens.in</span>
         </div>
-        <h3 class="card-headline">How Vijay's Tamilaga Vettri Kazhagam is reshaping Tamil Nadu's political calculus</h3>
-        <p class="card-excerpt">Actor-turned-politician Vijay's entry into Tamil Nadu politics marks a significant shift in the state's electoral landscape. This piece traces the structural conditions that enabled his rise and what it signals for the 2026 assembly race.</p>
+        <h3 class="card-headline">Audience segmentation and regional markets: how new entrants reshape established competitive landscapes</h3>
+        <p class="card-excerpt">A structured analytical piece examining how outsider entrants disrupt established competitive structures — using regional market dynamics as a case study. Demonstrates the ability to extract transferable business insights from complex, specific contexts.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Competitive analysis</span>
+          <span class="signal-tag">Market dynamics</span>
+          <span class="signal-tag">Audience-first</span>
+        </div>
         <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
       <!-- CARD 6 -->
       <a href="https://civiclens.in/uae-exit-from-opec/" target="_blank" rel="noopener"
-         class="article-card" data-category="Energy Politics">
+         class="article-card" data-category="Market Analysis">
         <div class="card-meta">
-          <span class="card-category">Energy Politics</span>
+          <span class="card-category">Market Analysis</span>
           <span class="card-source">civiclens.in</span>
         </div>
-        <h3 class="card-headline">Why the UAE's OPEC calculus is changing — and what it means for global oil markets</h3>
-        <p class="card-excerpt">Abu Dhabi has long been a stabilising force within OPEC, but growing production ambitions and a divergence from Saudi Arabia's strategy have placed the UAE at a fork in the road. An analysis of the economics and politics behind Gulf energy diplomacy.</p>
+        <h3 class="card-headline">Energy market strategy and cartel economics: when production incentives diverge from collective agreements</h3>
+        <p class="card-excerpt">An analysis of energy market dynamics, collective action problems, and strategic divergence within multi-party agreements — a piece that demonstrates the ability to explain complex market mechanisms clearly for readers in finance, commodities, or business strategy.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Energy markets</span>
+          <span class="signal-tag">Economic analysis</span>
+          <span class="signal-tag">B2B-relevant</span>
+        </div>
         <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
       <!-- CARD 7 -->
       <a href="https://civiclens.in/rupee-depreciation-india/" target="_blank" rel="noopener"
-         class="article-card" data-category="Indian Economy">
+         class="article-card" data-category="Economic Analysis">
         <div class="card-meta">
-          <span class="card-category">Indian Economy</span>
+          <span class="card-category">Economic Analysis</span>
           <span class="card-source">civiclens.in</span>
         </div>
-        <h3 class="card-headline">The falling rupee: what drives India's currency depreciation and who bears the cost</h3>
-        <p class="card-excerpt">India's currency has faced sustained depreciation pressure driven by a combination of global dollar strength, persistent current account deficits, and portfolio outflows. This explainer maps the mechanics, consequences, and policy responses — told through numbers that matter.</p>
+        <h3 class="card-headline">Currency depreciation explained: mechanics, downstream costs, and the policy toolkit</h3>
+        <p class="card-excerpt">A data-driven explainer on currency dynamics — covering market mechanics, distributional effects, and central bank responses. Demonstrates the ability to make macroeconomic content accessible and search-optimised for audiences in fintech, banking, or financial publishing.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Data-driven</span>
+          <span class="signal-tag">Fintech-relevant</span>
+          <span class="signal-tag">Explainer format</span>
+        </div>
         <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
       <!-- CARD 8 -->
       <a href="https://civiclens.in/india-financial-stability-2026/" target="_blank" rel="noopener"
-         class="article-card" data-category="Financial Stability">
+         class="article-card" data-category="Finance">
         <div class="card-meta">
-          <span class="card-category">Financial Stability</span>
+          <span class="card-category">Finance</span>
           <span class="card-source">civiclens.in</span>
         </div>
-        <h3 class="card-headline">India's financial stability in 2026: reading the stress signals in a resilient system</h3>
-        <p class="card-excerpt">India's banking sector has strengthened on paper — with improved NPA ratios and capital buffers — but a closer look reveals emerging pressure points in credit growth, NBFC exposure, and global spillover risks that bear watching.</p>
+        <h3 class="card-headline">Reading stress signals in a growing banking system: NPA ratios, credit growth, and emerging pressure points</h3>
+        <p class="card-excerpt">A structured financial analysis piece examining banking sector health indicators — the kind of authoritative, data-referenced content suited to financial services, SaaS companies in fintech, and B2B brands targeting finance professionals and institutional audiences.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Financial analysis</span>
+          <span class="signal-tag">Fintech / banking</span>
+          <span class="signal-tag">Authority content</span>
+        </div>
         <span class="card-link">Read full piece <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
-      <!-- CARD 9: MEDIUM -->
+      <!-- CARD 9 -->
       <a href="https://medium.com/@govindtamewar/indias-new-deterrence-doctrine-why-terrorism-is-no-longer-just-terrorism-f52b929634ec" target="_blank" rel="noopener"
-         class="article-card" data-category="Strategic Affairs">
+         class="article-card" data-category="Strategic Analysis">
         <div class="card-meta">
-          <span class="card-category">Strategic Affairs</span>
+          <span class="card-category">Strategic Analysis</span>
           <span class="card-source">Medium</span>
         </div>
-        <h3 class="card-headline">India's new deterrence doctrine: why terrorism is no longer just terrorism</h3>
-        <p class="card-excerpt">In the aftermath of escalating cross-border provocations, India has signalled a fundamental shift in its deterrence calculus — one that blurs the line between state and non-state actors. An analytical essay on the strategic doctrine redefining South Asian security.</p>
+        <h3 class="card-headline">Doctrine shifts and decision frameworks: how institutions signal strategic intent through public communication</h3>
+        <p class="card-excerpt">An analytical essay examining how institutional communication signals strategic posture shifts — exploring the gap between official doctrine and observed behaviour. A piece that demonstrates long-form analytical capability, argumentative structure, and thought leadership writing suited to policy, consulting, and B2B contexts.</p>
+        <div class="card-signals">
+          <span class="signal-tag">Thought leadership</span>
+          <span class="signal-tag">Long-form essay</span>
+          <span class="signal-tag">Analytical writing</span>
+        </div>
         <span class="card-link">Read on Medium <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 9L9 1M9 1H3M9 1V7"/></svg></span>
       </a>
 
@@ -921,88 +959,88 @@
   </div>
 </section>
 
-<!-- WRITING PHILOSOPHY -->
+<!-- CONTENT APPROACH -->
 <section id="approach" class="philosophy-section">
   <div class="philosophy-inner">
     <div>
-      <div class="philosophy-label">Editorial Approach</div>
-      <h2 class="philosophy-title">A craft built on <em>rigour, context,</em> and clarity</h2>
+      <div class="philosophy-label">Content Philosophy</div>
+      <h2 class="philosophy-title">How I approach <em>content strategy</em> and writing</h2>
     </div>
     <ul class="philosophy-principles">
       <li>
         <span class="principle-num">01</span>
         <div>
-          <div class="principle-title">Research before narrative</div>
-          <p class="principle-body">Every piece begins with a clear empirical question. Policy claims must be grounded in primary data — parliamentary records, RBI reports, MOSPI figures, UN documents. The narrative follows the evidence, not the other way around.</p>
+          <div class="principle-title">Search intent before content</div>
+          <p class="principle-body">Every piece starts with a clear understanding of what the target reader actually needs — and how they're searching for it. Keyword research, SERP analysis, and audience mapping come before a single word is written. Structure follows intent.</p>
         </div>
       </li>
       <li>
         <span class="principle-num">02</span>
         <div>
-          <div class="principle-title">Context over chronology</div>
-          <p class="principle-body">Good analytical journalism does not simply report what happened — it explains why it matters and how it connects to longer structural trends. A budget line item is meaningless without the fiscal history behind it.</p>
+          <div class="principle-title">Research depth as competitive advantage</div>
+          <p class="principle-body">The fastest way to build domain authority is to produce content that genuinely knows more than the competition. Every piece I write is built on primary sources, verified data, and structured synthesis — not surface-level aggregation. That's what earns backlinks and reader trust.</p>
         </div>
       </li>
       <li>
         <span class="principle-num">03</span>
         <div>
-          <div class="principle-title">SEO as editorial discipline</div>
-          <p class="principle-body">Search-engine awareness is not separate from editorial quality — it is an expression of it. Writing for genuine search intent means writing what readers actually need, structured clearly enough that both humans and algorithms can follow the argument.</p>
+          <div class="principle-title">Structure as editorial discipline</div>
+          <p class="principle-body">Good long-form content isn't just well-written — it's architecturally sound. Headers that map to search queries, logical information hierarchy, clean internal linking, and a narrative that holds across 2,000+ words. Structure and SEO are the same problem at different scales.</p>
         </div>
       </li>
       <li>
         <span class="principle-num">04</span>
         <div>
           <div class="principle-title">Complexity without jargon</div>
-          <p class="principle-body">Fiscal federalism, deterrence theory, semiconductor economics — these are not simple topics. The writer's job is to find the plain-language frame that preserves intellectual honesty without sacrificing accessibility.</p>
+          <p class="principle-body">Financial mechanics, supply chain economics, technology infrastructure, SaaS market dynamics — none of these are simple. The writer's job is to find the plain-language frame that preserves analytical rigour without sacrificing the accessibility that drives engagement and retention.</p>
         </div>
       </li>
       <li>
         <span class="principle-num">05</span>
         <div>
-          <div class="principle-title">Publication-grade standards</div>
-          <p class="principle-body">Every article is treated as a publishable unit: a strong news lead, edited for Yoast readability, with proper metadata, structured data, and canonical tagging. Editorial craft and technical SEO are the same discipline practised at different levels.</p>
+          <div class="principle-title">Publishing-grade execution</div>
+          <p class="principle-body">Every piece is treated as a production-ready asset: Yoast-optimised, properly structured with metadata and canonical tagging, formatted for skimmability, and reviewed against both editorial and SEO checklists. Content that looks good in a CMS and performs well in search are not separate goals.</p>
         </div>
       </li>
     </ul>
   </div>
 </section>
 
-<!-- PUBLICATION PLATFORMS -->
+<!-- PUBLISHING PLATFORMS -->
 <section id="platforms" class="platforms-section">
   <div class="platforms-inner">
-    <div class="section-eyebrow">Publication Platforms</div>
-    <h2 class="section-title" style="margin-top: 0.5rem;">Where the work appears</h2>
+    <div class="section-eyebrow">Publishing Platforms</div>
+    <h2 class="section-title" style="margin-top: 0.5rem;">Where the work lives</h2>
     <div class="platforms-grid">
       <div class="platform-card">
         <div class="platform-name">Primary Platform</div>
-        <h3 class="platform-title">civiclens.in</h3>
+        <h3 class="platform-title">CIVICLENS.IN</h3>
         <p class="platform-desc">
-          An independent civic journalism platform I founded in 2025, focused on policy depth, parliamentary accountability, and geopolitical analysis. All content follows SEO-first editorial workflows — from keyword research and structured metadata to Yoast-optimised long-form explainers. The platform targets the gap between wire-service brevity and academic inaccessibility, writing for serious digital readers.
+          A digital publishing platform I founded and operate — built from zero into a functioning content operation with editorial workflows, SEO architecture, and a cross-functional team. The platform serves as a live demonstration of content operations in practice: keyword research, content briefs, structured metadata, on-page optimisation, and long-form publishing at sustained output volume. Every process I'd apply to a client's content system, I built here first.
         </p>
         <div class="platform-tags">
-          <span class="platform-tag">Civic Journalism</span>
-          <span class="platform-tag">Policy Analysis</span>
-          <span class="platform-tag">Long-Form Explainers</span>
+          <span class="platform-tag">Content Operations</span>
           <span class="platform-tag">SEO Publishing</span>
-          <span class="platform-tag">Parliamentary Coverage</span>
+          <span class="platform-tag">Long-Form Content</span>
+          <span class="platform-tag">Editorial Strategy</span>
           <span class="platform-tag">WordPress</span>
+          <span class="platform-tag">Organic Growth</span>
         </div>
         <a href="https://civiclens.in" target="_blank" rel="noopener" class="platform-link">
           Visit platform → civiclens.in
         </a>
       </div>
       <div class="platform-card">
-        <div class="platform-name">Essay &amp; Analysis</div>
+        <div class="platform-name">Essays &amp; Thought Leadership</div>
         <h3 class="platform-title">Medium</h3>
         <p class="platform-desc">
-          Used for analytical essays and opinion pieces that take a more personal argumentative voice — particularly on strategic affairs, Indian foreign policy, and security doctrine. Medium complements civiclens.in by hosting work that benefits from editorial freedom outside an institutional format, including deeper structural arguments on geopolitical themes.
+          Used for longer analytical essays and opinion-led thought leadership pieces — content that benefits from a more personal argumentative voice and longer-form narrative structure. Medium complements the primary platform by hosting work that leans into strategic analysis and industry commentary: the kind of content that builds professional credibility and demonstrates depth of reasoning across complex, multi-layered topics.
         </p>
         <div class="platform-tags">
-          <span class="platform-tag">Strategic Analysis</span>
-          <span class="platform-tag">Security Doctrine</span>
-          <span class="platform-tag">Geopolitical Essays</span>
-          <span class="platform-tag">Foreign Policy</span>
+          <span class="platform-tag">Thought Leadership</span>
+          <span class="platform-tag">Analytical Essays</span>
+          <span class="platform-tag">Long-Form Writing</span>
+          <span class="platform-tag">Strategic Commentary</span>
           <span class="platform-tag">Digital Publishing</span>
         </div>
         <a href="https://medium.com/@govindtamewar" target="_blank" rel="noopener" class="platform-link">
@@ -1016,51 +1054,51 @@
 <!-- CAPABILITIES -->
 <section class="capabilities-section">
   <div class="capabilities-inner">
-    <div class="section-eyebrow">Editorial Capabilities</div>
-    <h2 class="section-title" style="margin-top: 0.5rem;">What I bring to the desk</h2>
+    <div class="section-eyebrow">What I Bring</div>
+    <h2 class="section-title" style="margin-top: 0.5rem;">Skills &amp; content capabilities</h2>
     <div class="capabilities-grid">
       <div class="capability-group">
-        <div class="capability-group-title">Writing &amp; Analysis</div>
+        <div class="capability-group-title">Writing &amp; Content</div>
         <ul class="capability-list">
-          <li>Long-form policy explainers</li>
-          <li>Geopolitical analysis</li>
-          <li>Analytical storytelling</li>
-          <li>News-lead writing</li>
-          <li>Editorial structuring</li>
-          <li>Research-driven journalism</li>
+          <li>Long-form SEO articles</li>
+          <li>B2B &amp; SaaS content</li>
+          <li>Thought leadership</li>
+          <li>Explainer &amp; guide writing</li>
+          <li>Web copy &amp; landing pages</li>
+          <li>Research synthesis</li>
         </ul>
       </div>
       <div class="capability-group">
-        <div class="capability-group-title">SEO &amp; Content Strategy</div>
+        <div class="capability-group-title">SEO &amp; Search Strategy</div>
         <ul class="capability-list">
           <li>Keyword research &amp; mapping</li>
           <li>Search intent writing</li>
           <li>On-page optimisation</li>
-          <li>Metadata &amp; schema</li>
+          <li>Content brief creation</li>
           <li>Yoast SEO workflows</li>
           <li>SEMrush content audits</li>
         </ul>
       </div>
       <div class="capability-group">
-        <div class="capability-group-title">Digital Publishing</div>
+        <div class="capability-group-title">Editorial Operations</div>
         <ul class="capability-list">
-          <li>WordPress publishing</li>
-          <li>Google Search Console</li>
-          <li>Crawl budget management</li>
-          <li>Hreflang &amp; canonicals</li>
-          <li>Structured data markup</li>
-          <li>Editorial CMS workflows</li>
+          <li>Editorial calendar planning</li>
+          <li>Content system design</li>
+          <li>Writer briefing &amp; QA</li>
+          <li>WordPress &amp; CMS publishing</li>
+          <li>Metadata &amp; structured data</li>
+          <li>Performance review</li>
         </ul>
       </div>
       <div class="capability-group">
-        <div class="capability-group-title">Subject Expertise</div>
+        <div class="capability-group-title">Industry Knowledge</div>
         <ul class="capability-list">
-          <li>Indian fiscal policy</li>
-          <li>Geopolitics &amp; IR</li>
-          <li>Strategic &amp; defence affairs</li>
-          <li>Energy economics</li>
-          <li>Financial markets</li>
-          <li>Technology &amp; industrial policy</li>
+          <li>Technology &amp; SaaS</li>
+          <li>Finance &amp; fintech</li>
+          <li>Supply chain &amp; trade</li>
+          <li>Energy &amp; infrastructure</li>
+          <li>Economic &amp; market analysis</li>
+          <li>Policy &amp; regulatory context</li>
         </ul>
       </div>
     </div>
@@ -1071,23 +1109,23 @@
 <section id="contact" class="contact-section">
   <div class="contact-inner">
     <div class="contact-left">
-      <h2>Get in touch</h2>
+      <h2>Work together</h2>
       <p>
-        I am open to contributing to digital publications, editorial teams, policy research organisations, and content strategy engagements. If you are looking for a writer who combines analytical depth with SEO-aware publishing, I would be glad to hear from you.
+        I'm open to content writing engagements, SEO strategy projects, editorial partnerships, and content operations roles. If you're a brand, agency, publisher, or growth team looking for research-backed long-form content that performs in search — I'd like to hear from you.
       </p>
     </div>
     <div class="contact-right">
       <ul class="contact-links">
         <li>
           <span class="contact-link-label">Email</span>
-          <a href="mailto:govind@civiclens.in" class="contact-link-value">govind@civiclens.in</a>
+          <a href="mailto:govindtamewar@gmail.com" class="contact-link-value">govindtamewar@gmail.com</a>
         </li>
         <li>
           <span class="contact-link-label">LinkedIn</span>
           <a href="https://linkedin.com/in/govindtamewar" target="_blank" rel="noopener" class="contact-link-value">linkedin.com/in/govindtamewar ↗</a>
         </li>
         <li>
-          <span class="contact-link-label">Publication</span>
+          <span class="contact-link-label">Platform</span>
           <a href="https://civiclens.in" target="_blank" rel="noopener" class="contact-link-value">civiclens.in ↗</a>
         </li>
         <li>
@@ -1102,8 +1140,8 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="logo">Govind <span>Tamewar</span> — Editorial Writer</div>
-    <p>Policy · Geopolitics · Digital Publishing · © 2025</p>
+    <div class="logo">Govind <span>Tamewar</span> — Content Strategist &amp; SEO Writer</div>
+    <p>Long-Form Content · SEO · Digital Publishing · © 2025</p>
   </div>
 </footer>
 
@@ -1117,19 +1155,17 @@
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const filter = btn.dataset.filter;
-
       cards.forEach(card => {
         if (filter === 'all') {
           card.classList.remove('hidden');
         } else {
-          const cat = card.dataset.category;
-          card.classList.toggle('hidden', cat !== filter);
+          card.classList.toggle('hidden', card.dataset.category !== filter);
         }
       });
     });
   });
 
-  // Smooth entrance on scroll
+  // Scroll entrance
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1137,7 +1173,7 @@
         entry.target.style.transform = 'translateY(0)';
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
 
   document.querySelectorAll('.article-card, .platform-card, .capability-group').forEach(el => {
     el.style.opacity = '0';
